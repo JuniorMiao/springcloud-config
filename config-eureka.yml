@@ -1,48 +1,48 @@
-#Æô¶¯»·¾³Ñ¡ÔñµÄÅäÖÃ
+#å¯åŠ¨ç¯å¢ƒé€‰æ‹©çš„é…ç½®
 spring:
   profiles:
     active: dev
 ---
 server:
   port: 7001
-#springµÄÅäÖÃ
+#springçš„é…ç½®
 spring:
   profiles: dev
   application:
     name: springcloud-config-eureka-dev
 
-#EurekaÅäÖÃ
+#Eurekaé…ç½®
 eureka:
   instance:
-    hostname: eureka7001.com #Eureaka·şÎñ¶ËµÄÊµÀıÃû³Æ
+    hostname: eureka7001.com #EureakaæœåŠ¡ç«¯çš„å®ä¾‹åç§°
   client:
-    register-with-eureka: false  #±íÊ¾ÊÇ·ñÏòEureka×¢²áÖĞĞÄ×¢²á×Ô¼º
-    fetch-registry: false #Èç¹ûfetch-registryÎªfalse£¬Ôò±íÊ¾×Ô¼ºÎª×¢²áÖĞĞÄ
-    service-url: #¼à¿ØÒ³Ãæ
-      #µ¥»ú£ºµã½øÈ¥²Î¿¼Ô´Âë£¬¿É¿´µ½Ä¬ÈÏµÄurl¶Ë¿ÚÅäÖÃÎª8761£¬ÎÒÃÇÉèÖÃÎª×Ô¼ºµÄ¶Ë¿Ú¡£
+    register-with-eureka: false  #è¡¨ç¤ºæ˜¯å¦å‘Eurekaæ³¨å†Œä¸­å¿ƒæ³¨å†Œè‡ªå·±
+    fetch-registry: false #å¦‚æœfetch-registryä¸ºfalseï¼Œåˆ™è¡¨ç¤ºè‡ªå·±ä¸ºæ³¨å†Œä¸­å¿ƒ
+    service-url: #ç›‘æ§é¡µé¢
+      #å•æœºï¼šç‚¹è¿›å»å‚è€ƒæºç ï¼Œå¯çœ‹åˆ°é»˜è®¤çš„urlç«¯å£é…ç½®ä¸º8761ï¼Œæˆ‘ä»¬è®¾ç½®ä¸ºè‡ªå·±çš„ç«¯å£ã€‚
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
 
-      #¼¯Èº£¨³ı×ÔÉíÍâ ¹ØÁªÆäËûËùÓĞ£©
+      #é›†ç¾¤ï¼ˆé™¤è‡ªèº«å¤– å…³è”å…¶ä»–æ‰€æœ‰ï¼‰
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 ---
 server:
   port: 7001
-#springµÄÅäÖÃ
+#springçš„é…ç½®
 spring:
   profiles: test
   application:
     name: springcloud-config-eureka-test
 
-#EurekaÅäÖÃ
+#Eurekaé…ç½®
 eureka:
   instance:
-    hostname: eureka7001.com #Eureaka·şÎñ¶ËµÄÊµÀıÃû³Æ
+    hostname: eureka7001.com #EureakaæœåŠ¡ç«¯çš„å®ä¾‹åç§°
   client:
-    register-with-eureka: false  #±íÊ¾ÊÇ·ñÏòEureka×¢²áÖĞĞÄ×¢²á×Ô¼º
-    fetch-registry: false #Èç¹ûfetch-registryÎªfalse£¬Ôò±íÊ¾×Ô¼ºÎª×¢²áÖĞĞÄ
-    service-url: #¼à¿ØÒ³Ãæ
-      #µ¥»ú£ºµã½øÈ¥²Î¿¼Ô´Âë£¬¿É¿´µ½Ä¬ÈÏµÄurl¶Ë¿ÚÅäÖÃÎª8761£¬ÎÒÃÇÉèÖÃÎª×Ô¼ºµÄ¶Ë¿Ú¡£
+    register-with-eureka: false  #è¡¨ç¤ºæ˜¯å¦å‘Eurekaæ³¨å†Œä¸­å¿ƒæ³¨å†Œè‡ªå·±
+    fetch-registry: false #å¦‚æœfetch-registryä¸ºfalseï¼Œåˆ™è¡¨ç¤ºè‡ªå·±ä¸ºæ³¨å†Œä¸­å¿ƒ
+    service-url: #ç›‘æ§é¡µé¢
+      #å•æœºï¼šç‚¹è¿›å»å‚è€ƒæºç ï¼Œå¯çœ‹åˆ°é»˜è®¤çš„urlç«¯å£é…ç½®ä¸º8761ï¼Œæˆ‘ä»¬è®¾ç½®ä¸ºè‡ªå·±çš„ç«¯å£ã€‚
       #defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
 
-      #¼¯Èº£¨³ı×ÔÉíÍâ ¹ØÁªÆäËûËùÓĞ£©
+      #é›†ç¾¤ï¼ˆé™¤è‡ªèº«å¤– å…³è”å…¶ä»–æ‰€æœ‰ï¼‰
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/

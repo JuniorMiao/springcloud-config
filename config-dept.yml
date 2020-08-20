@@ -1,4 +1,4 @@
-#Æô¶¯»·¾³Ñ¡ÔñµÄÅäÖÃ
+#å¯åŠ¨ç¯å¢ƒé€‰æ‹©çš„é…ç½®
 spring:
   profiles:
     active: dev
@@ -6,35 +6,35 @@ spring:
 server:
   port: 8001
 
-#mybatisÅäÖÃ
+#mybatisé…ç½®
 mybatis:
   type-aliases-package: com.lemon.springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
-#springµÄÅäÖÃ
+#springçš„é…ç½®
 spring:
   profiles: dev
   application:
     name: springcloud-config-dept-dev
-    #Êı¾İÔ´µÄÅäÖÃ
+    #æ•°æ®æºçš„é…ç½®
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource #Êı¾İÔ´Îªdruid
-    driver-class-name: com.mysql.jdbc.Driver #Êı¾İ¿âÇı¶¯
+    type: com.alibaba.druid.pool.DruidDataSource #æ•°æ®æºä¸ºdruid
+    driver-class-name: com.mysql.jdbc.Driver #æ•°æ®åº“é©±åŠ¨
     url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=utf-8&servetTimeZone=Asia/Shanghai
     username: root
     password: root
 
-#EurekaµÄÅäÖÃ¡£ ·şÎñ×¢²áµ½EurekaÖĞ£¬ĞèÒªÒ»¸öÂ·¾¶µØÖ·
+#Eurekaçš„é…ç½®ã€‚ æœåŠ¡æ³¨å†Œåˆ°Eurekaä¸­ï¼Œéœ€è¦ä¸€ä¸ªè·¯å¾„åœ°å€
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    #ĞŞ¸ÄEurekaÖĞstatusµÄÄ¬ÈÏÃèÊöĞÅÏ¢¡£²»ÅäÖÃÄ¬ÈÏÎªDESKTOP-XXXÃèÊö
+    #ä¿®æ”¹Eurekaä¸­statusçš„é»˜è®¤æè¿°ä¿¡æ¯ã€‚ä¸é…ç½®é»˜è®¤ä¸ºDESKTOP-XXXæè¿°
     instance-id: springcloud-provider-dept8001
-    prefer-ip-address: true #¸ÄÎªtrueºó EurekaÖĞµÄstatus¾Í»áÏÔÊ¾ÕæÊµipµØÖ·
-#infoÅäÖÃ   EurekaµÄstatusµÄxx/infoÁ´½Óµã¿ªºóµÄinfo¼à¿ØĞÅÏ¢¡£Ã»ÓĞÌ«´óÒâÒå
+    prefer-ip-address: true #æ”¹ä¸ºtrueå Eurekaä¸­çš„statuså°±ä¼šæ˜¾ç¤ºçœŸå®ipåœ°å€
+#infoé…ç½®   Eurekaçš„statusçš„xx/infoé“¾æ¥ç‚¹å¼€åçš„infoç›‘æ§ä¿¡æ¯ã€‚æ²¡æœ‰å¤ªå¤§æ„ä¹‰
 info:
   app.name: ti zi zui bang,jiayou
   company.name: tizi.lemon.com
@@ -43,35 +43,35 @@ info:
 server:
   port: 8001
 
-#mybatisÅäÖÃ
+#mybatisé…ç½®
 mybatis:
   type-aliases-package: com.lemon.springcloud.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/mapper/*.xml
 
-#springµÄÅäÖÃ
+#springçš„é…ç½®
 spring:
   profiles: test
   application:
     name: springcloud-config-dept-test
-    #Êı¾İÔ´µÄÅäÖÃ
+    #æ•°æ®æºçš„é…ç½®
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource #Êı¾İÔ´Îªdruid
-    driver-class-name: com.mysql.jdbc.Driver #Êı¾İ¿âÇı¶¯
+    type: com.alibaba.druid.pool.DruidDataSource #æ•°æ®æºä¸ºdruid
+    driver-class-name: com.mysql.jdbc.Driver #æ•°æ®åº“é©±åŠ¨
     url: jdbc:mysql://localhost:3306/springcloud2?useUnicode=true&characterEncoding=utf-8&servetTimeZone=Asia/Shanghai
     username: root
     password: root
 
-#EurekaµÄÅäÖÃ¡£ ·şÎñ×¢²áµ½EurekaÖĞ£¬ĞèÒªÒ»¸öÂ·¾¶µØÖ·
+#Eurekaçš„é…ç½®ã€‚ æœåŠ¡æ³¨å†Œåˆ°Eurekaä¸­ï¼Œéœ€è¦ä¸€ä¸ªè·¯å¾„åœ°å€
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/,http://localhost:7002/eureka/,http://localhost:7003/eureka/
   instance:
-    #ĞŞ¸ÄEurekaÖĞstatusµÄÄ¬ÈÏÃèÊöĞÅÏ¢¡£²»ÅäÖÃÄ¬ÈÏÎªDESKTOP-XXXÃèÊö
+    #ä¿®æ”¹Eurekaä¸­statusçš„é»˜è®¤æè¿°ä¿¡æ¯ã€‚ä¸é…ç½®é»˜è®¤ä¸ºDESKTOP-XXXæè¿°
     instance-id: springcloud-provider-dept8001
-    prefer-ip-address: true #¸ÄÎªtrueºó EurekaÖĞµÄstatus¾Í»áÏÔÊ¾ÕæÊµipµØÖ·
-#infoÅäÖÃ   EurekaµÄstatusµÄxx/infoÁ´½Óµã¿ªºóµÄinfo¼à¿ØĞÅÏ¢¡£Ã»ÓĞÌ«´óÒâÒå
+    prefer-ip-address: true #æ”¹ä¸ºtrueå Eurekaä¸­çš„statuså°±ä¼šæ˜¾ç¤ºçœŸå®ipåœ°å€
+#infoé…ç½®   Eurekaçš„statusçš„xx/infoé“¾æ¥ç‚¹å¼€åçš„infoç›‘æ§ä¿¡æ¯ã€‚æ²¡æœ‰å¤ªå¤§æ„ä¹‰
 info:
   app.name: ti zi zui bang,jiayou
   company.name: tizi.lemon.com
