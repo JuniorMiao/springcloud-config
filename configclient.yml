@@ -1,32 +1,32 @@
-#Æô¶¯»·¾³Ñ¡ÔñµÄÅäÖÃ
+#å¯åŠ¨ç¯å¢ƒé€‰æ‹©çš„é…ç½®
 spring:
   profiles:
     active: dev
 
-#springbootÆô¶¯¶à»·¾³µÄÅäÖÃ
----
+#springbootå¯åŠ¨å¤šç¯å¢ƒçš„é…ç½®
+#-----
 server:
   port: 8201
-#springµÄÅäÖÃ
+#springçš„é…ç½®
 spring:
   profiles: dev
   application:
     name: springcloud-config-client-dev
-#EurekaµÄÅäÖÃ¡£ ·şÎñ×¢²áµ½EurekaÖĞ£¬ĞèÒªÒ»¸öÂ·¾¶µØÖ·
+#Eurekaçš„é…ç½®ã€‚ æœåŠ¡æ³¨å†Œåˆ°Eurekaä¸­ï¼Œéœ€è¦ä¸€ä¸ªè·¯å¾„åœ°å€
 eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
----
+#-----
 server:
   port: 8202
-#springµÄÅäÖÃ
+#springçš„é…ç½®
 spring:
   profiles: test
   application:
     name: springcloud-config-client-test
 
-#EurekaµÄÅäÖÃ¡£ ·şÎñ×¢²áµ½EurekaÖĞ£¬ĞèÒªÒ»¸öÂ·¾¶µØÖ·
+#Eurekaçš„é…ç½®ã€‚ æœåŠ¡æ³¨å†Œåˆ°Eurekaä¸­ï¼Œéœ€è¦ä¸€ä¸ªè·¯å¾„åœ°å€
 eureka:
   client:
     service-url:
