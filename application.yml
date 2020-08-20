@@ -4,7 +4,7 @@ spring:
     active: dev
 
 #springboot启动多环境的配置
-#-----
+---
 server:
   port: 8201
 #spring的配置
@@ -17,7 +17,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
-#-----
+---
 server:
   port: 8202
 #spring的配置
