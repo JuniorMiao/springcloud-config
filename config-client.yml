@@ -18,7 +18,7 @@ eureka:
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
 ---
-
+#增加一个测试
 
 server:
   port: 8202
